@@ -1,0 +1,20 @@
+---
+layout: default
+title: Home
+---
+
+<h1 id="header-1">Quantitative Finance</h1>
+
+<p>Blog posts on QFin</p>
+
+<h1 id="header-1">Machine Learning</h1>
+
+<p>Blog posts on ML</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
